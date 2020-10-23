@@ -13,8 +13,20 @@ body div {
 div .card, .jumbotron {
   margin: 10px;
   border-radius: 5%;
-  background-color: #7cc6fe
+  background-image: linear-gradient(rgb(202, 58, 22), rgb(255, 153, 0))
+
 }
 
 body {
-  background-color: #E7BB41
+  background-image: url(../images/fall.jpg);
+  font-weight: 500;
+}
+
+body .container {
+  background-color: #f33615cb;
+}
+
+footer p {
+  margin-top: 10px;
+  margin-bottom: 1px;
+}

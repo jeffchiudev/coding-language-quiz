@@ -1,22 +1,18 @@
 $(document).ready(function() {
   $("#name-form").submit(function(event) {
+    $(".greeting").fadeOut();
     const person = $("input#quiz-taker").val();
     
     $(".person").append(person);
     event.preventDefault();
-    $(".explanation").show();
-    $(".greeting").hide();
+    $(".explanation").fadeIn();
   });
   $("#start").click(function(event) { 
-    $(".explanation").hide();
-    $(".the-quiz").show();
+    $(".explanation").fadeOut();
+    $(".the-quiz").fadeIn();
     event.preventDefault;
   });
   $("#quiz-form").submit(function(event) {
-    const python = "Python";
-    const java = "Java";
-    const javascript = "Javascript";
-    
     const musicValue = parseInt($("input:radio[name=music]:checked").val());
     const foodValue = parseInt($("input:radio[name=food-host]:checked").val());
     const animalValue = parseInt($("input:radio[name=animal]:checked").val());
@@ -25,18 +21,18 @@ $(document).ready(function() {
     let total = colorValue + placeValue + animalValue + foodValue + musicValue;
 
     if (total <= 6) {
-      $(".final-result").append(python);
-      $(".pythonFinal").show();
+      $(".final-result").append("Python");
+      $(".pythonFinal").fadeIn();
     } else if (total >= 7 && total <= 11) {
-      $(".final-result").append(java);
-      $(".javaFinal").show();
+      $(".final-result").append("Java");
+      $(".javaFinal").fadeIn();
     } else {
-      $(".final-result").append(javascript);
-      $(".javaScriptFinal").show();
+      $(".final-result").append("JavaScript");
+      $(".javaScriptFinal").fadeIn();
     }
 
-    $(".results").show();
-    $(".the-quiz").hide();
+    $(".results").fadeIn();
+    $(".the-quiz").fadeOut();
     event.preventDefault();
   });
 });
