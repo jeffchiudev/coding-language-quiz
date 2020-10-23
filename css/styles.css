@@ -30,3 +30,16 @@ footer p {
   margin-top: 10px;
   margin-bottom: 1px;
 }
+
+.the-quiz .form-group {
+  margin-left: 50px;
+}
+
+.greeting .form-group {
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+.greeting button {
+  margin-left: 100px;
+}
