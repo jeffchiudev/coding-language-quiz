@@ -16,7 +16,7 @@
   </div>
   <div class="container">
     <div class="greeting">
-      <h2>Who are you?</h2> <!--should this hide after entry?-->
+      <h2>Before we get started, who am I speaking to?</h2> <!--should this hide after entry?-->
       <form id="name-form"> 
         <p>Don't worry, we just want to know who we're talking to!</p>
         <div class="form-group">
@@ -29,15 +29,21 @@
 
     <div class="explanation"> <!--Explanation-->
       <h2>About our quiz</h2>
-      <p>If you're like most people and have given a passing thought to the idea of coding, you might've come to the conclusion that there are quite a few languages in use today and a <strong><em>LOT</em></strong> of pros and cons of each according to "people" on the internet, and they will be entirely too happy to share their opinions with you.</p>
-      <p>We get it and here at BizzFEED we hoped making this page would give you some ideas of what's best for you.</p>
+      <p>If you're like most people and have given a passing thought to the idea of coding, you might've come to the conclusion that there are quite a few languages in use today and a <strong><em>LOT</em></strong> of pros and cons of each according to "people" and "that guy/gal/person" on the internet, and they will be entirely too happy to share their opinions with you.</p>
+      <p>Not feeling overwhelmed yet I hope?  Today we're going to help you narrow it down from the top 3:</p>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Javascript</li>
+      </ul>
+      <p>We get it, and here at BizzFEED we hoped making this page would give you some ideas of what's best for you.</p>
       <p>Below there is a series of questions designed by our incredibly qualified and totally legit science team to help you make those choices.  Don't think about it too much, just answer what feels right</p>
-      <div class="btn btn-primary"><!--button to progress onto the quiz-->
+      <div class="btn btn-primary" id="start"><!--button to progress onto the quiz-->
         Lets begin!
       </div> 
     </div>
-    
-    <div> <!--form section-->
+
+    <div class="the-quiz"> <!--form section-->
       <form id="quiz-form">
         <div class="form-group">
           <label for="music">Favorite type of music?</label> <!--Q1-->
@@ -151,6 +157,11 @@
         <p>Click the button below to find out the language best suited for you!</p>
         <button type="submit" class="btn btn-primary">And the language is...</button>
       </form>
+    </div>
+
+    <div class="results"> <!--results section-->
+      <p>After sending our bestest, wrinkley brained experts into their science cave your results have come back!</p>
+      <p><span class="person"></span>, the perfect languages for you is<span class="final-result"></span>, congratulations!</p>
     </div>
 
   </div>
