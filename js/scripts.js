@@ -5,6 +5,7 @@ $(document).ready(function() {
     $(".person").append(person);
     event.preventDefault();
     $(".explanation").show();
+    $(".greeting").hide();
   });
   $("#start").click(function(event) { 
     $(".explanation").hide();
@@ -18,6 +19,8 @@ $(document).ready(function() {
     const placeValue = parseInt($("input:radio[name=place]:checked").val());
     const colorValue = parseInt($("input:radio[name=color]:checked").val());
     let total = colorValue + placeValue + animalValue + foodValue + musicValue;
+    $(".results").show();
+    $(".the-quiz").hide();
     event.preventDefault();
   });
 });
