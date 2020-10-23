@@ -9,3 +9,12 @@ body div {
 .pythonFinal, .javaFinal, .javaScriptFinal, .results, .explanation, .the-quiz {
   display: none;
 }
+
+div .card, .jumbotron {
+  margin: 10px;
+  border-radius: 5%;
+  background-color: #7cc6fe
+}
+
+body {
+  background-color: #E7BB41
